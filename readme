@@ -1,0 +1,32 @@
+🕸️ Web Scraper and Summarizer
+Created by Kaustubh Bhalerao
+
+🌟 Overview
+This project combines web scraping and AI-based summarization to extract content from websites and generate concise, insightful summaries — all in one streamlined process. It’s designed to cut through irrelevant content like ads, navigation links, and scripts, leaving only the core information.
+
+✨ Features
+Web Scraping: Uses requests and BeautifulSoup4 to fetch, clean, and parse content from any website.
+AI-Powered Summarization: Built with Hugging Face’s T5-small model to generate clear, high-quality summaries.
+Custom Prompting: Integrates langchain to create structured prompts, ensuring irrelevant content is ignored while the essential details are captured.
+Markdown Output: Generates clean, readable summaries — perfect for research, news aggregation, or quick content digestion.
+🔧 Tech Stack
+Python
+requests, BeautifulSoup4 (for web scraping)
+transformers (T5-small) and torch (for summarization)
+langchain (for content loading and structured prompt handling)
+🚀 How to Use
+Install dependencies:
+
+pip install transformers torch beautifulsoup4 langchain-community
+Run the summarizer:
+Import the function and provide a URL:
+
+from webscrapersummarizer import summarize  
+print(summarize("https://example.com"))
+Get your AI-generated summary — clean, short, and easy to read!
+
+🔥 Future Improvements
+Support for multi-page scraping
+More summarization models (e.g., BART, GPT)
+Improved content filtering
+CLI support for faster usage
